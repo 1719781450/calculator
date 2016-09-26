@@ -1,6 +1,22 @@
 <!--logs.wxml-->
 <view class="container log-list">
   <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
+    <text class="log-item">{{index + 1}}. {{log}}：看见你了</text>
   </block>
+</view>
+<view class="group">
+    <block wx:for="{{iconsize}}">
+      <text class="log-item">看见你了</text>
+      <icon type="success" size="{{item}}"/>
+    </block>
+</view>
+<view class="group">
+    <block wx:for="{{iconType}}">
+      <icon type="{{item}}" size="45"/>
+    </block>
+</view>
+<view class="group">
+    <block wx:for="{{iconColor}}">
+      <icon type="success" size="45" color="{{item}}"/>
+    </block>
 </view>

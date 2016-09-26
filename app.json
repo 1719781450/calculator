@@ -1,6 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/cal/cal",
+    "pages/list/list",
     "pages/logs/logs"
   ],
   "window":{
